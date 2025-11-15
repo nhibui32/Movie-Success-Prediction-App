@@ -25,6 +25,7 @@ def display_menu_as_staff():
     else:
         print("Logging out...")
         return
+    
 def display_menu_as_user():
     print("\nUser Menu:")
     print("1. View Predicted Movies")
@@ -38,6 +39,7 @@ def display_menu_as_user():
     else:
         print("Logging out...")
         return
+    
 def display_menu_as_guest():
     print("\nGuest Menu:")
     print("1. View Predicted Movies")
