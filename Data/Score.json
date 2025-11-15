@@ -1,0 +1,87 @@
+{
+  "Scores": {
+    "actors": {
+      "Leonardo DiCaprio": 95,
+        "Robert Downey Jr.": 92,
+        "Tom Hanks": 94,
+        "Brad Pitt": 90,
+        "Chris Hemsworth": 85,
+        "Johnny Depp": 88,
+        "Will Smith": 87,
+        "Dwayne Johnson": 86,
+        "Ryan Reynolds": 84,
+        "Chris Evans": 85
+    },
+    "actresses": {
+      "Meryl Streep": 96,
+      "Scarlett Johansson": 92,
+      "Jennifer Lawrence": 90,
+      "Natalie Portman": 89,
+      "Emma Stone": 88,
+      "Angelina Jolie": 87,
+      "Saoirse Ronan": 85,
+      "Gal Gadot": 84,
+      "Margot Robbie": 83,
+      "Viola Davis": 91
+    },
+    "directors": {
+      "Christopher Nolan": 98,
+      "Steven Spielberg": 97,
+      "Martin Scorsese": 96,
+      "James Cameron": 95,
+      "Quentin Tarantino": 94,
+      "Denis Villeneuve": 93,
+      "Ridley Scott": 88
+    },
+    "genres": {
+      "Action": 90,
+      "Adventure": 88,
+      "Sci-Fi": 95,
+      "Drama": 85,
+      "Comedy": 80,
+      "Horror": 70,
+      "Romance": 75,
+      "Thriller": 89
+    },
+    "release_month": {
+      "January": 70,
+      "February": 75,
+      "March": 80,
+      "April": 82,
+      "May": 88,
+      "June": 90,
+      "July": 92,
+      "August": 85,
+      "September": 80,
+      "October": 83,
+      "November": 95,
+      "December": 97
+    },
+    "rating": {
+      "G": 75,
+      "PG": 80,
+      "PG-13": 90,
+      "R": 85,
+      "NC-17": 60
+    },
+    "budget": {
+      "Low": 70,
+      "Medium": 85,
+      "High": 95
+    },
+    "country": {
+      "USA": 95,
+      "UK": 90,
+      "Canada": 85,
+      "France": 88,
+      "South Korea": 92,
+      "Japan": 91,
+      "India": 84
+    },
+    "runtime": {
+      "Short (<90 min)": 75,
+      "Medium (90–120 min)": 90,
+      "Long (>120 min)": 85
+    }
+  }
+}
