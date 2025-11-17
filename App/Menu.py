@@ -1,5 +1,5 @@
 import csv
-
+from AddMovie import main as add_movie
 def validate_user(username, password):
     try:
         with open("Data/users.csv", mode="r") as file:

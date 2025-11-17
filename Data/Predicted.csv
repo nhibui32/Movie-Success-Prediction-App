@@ -1,2 +1,3 @@
-title,actor,actress,director,genre,release_month,rating,budget,country,runtime,predicted_score
-Catch Me,Ryan Reynolds,Gal Gadot,Christopher Nolan,Romance,January,G,Low,India,Short (<90 min),79.44
+title,actor,actress,director,genre,release_month,rating,budget,country,predicted_score
+Catch Me,Ryan Reynolds,Gal Gadot,Christopher Nolan,Romance,January,G,Low,India,79.44
+test1,Chris Hemsworth,Meryl Streep,Christopher Nolan,Thriller,June,NC-17,Low,France,84.5
