@@ -4,6 +4,7 @@ from Menu import (
     display_menu_as_guest,
     validate_user
 )
+
 def User_Interface():
     print("Welcome to the Movie Success Prediction App!")
 
@@ -21,20 +22,24 @@ def User_Interface():
 
             role = validate_user(username, password)
 
-            if not current_user:  # Check if user exists
+            if role is None:  # Invalid login
                 print("\nInvalid username or password. Try again.")
-                continue  # Go back to the main menu
+                continue
+
+            # Build current_user dictionary
+            current_user = {
+                'username': username,
+                'role': role,
+                'first_name': username  # optional, adjust if you have first_name stored
+            }
 
             if current_user['role'] == 1:
                 print("\nLogin successful! Welcome Staff.")
-                display_menu_as_staff()
+                display_menu_as_staff(current_user)
 
-            elif role == 2:
+            elif current_user['role'] == 2:
                 print("\nLogin successful! Welcome User.")
-                display_menu_as_user()
-
-            else:
-                print("\nInvalid username or password. Try again.")
+                display_menu_as_user(current_user)
 
         elif choice == '2':
             print("\nContinuing as Guest...")
