@@ -21,7 +21,11 @@ def User_Interface():
 
             role = validate_user(username, password)
 
-            if role == 1:
+            if not current_user:  # Check if user exists
+                print("\nInvalid username or password. Try again.")
+                continue  # Go back to the main menu
+
+            if current_user['role'] == 1:
                 print("\nLogin successful! Welcome Staff.")
                 display_menu_as_staff()
 

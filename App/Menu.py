@@ -41,6 +41,12 @@ def display_menu_as_user():
     print("4. Logout")
     user_choice = input("Enter your choice (1-3): ")
     if user_choice == '1':
+        Profile(current_user)
+        display_menu_as_user(current_user)
+    elif user_choice == '2':
+        search_movie(current_user['role'], current_user['first_name']) 
+        display_menu_as_user(current_user)
+    elif user_choice == '3':
         display_movies()
         display_menu_as_user()
     elif user_choice == '2':
@@ -55,8 +61,9 @@ def display_menu_as_user():
 def display_menu_as_guest():
     print("\nGuest Menu:")
     print("1. View Movies List")
-    print("2. Exit")
-    guest_choice = input("Enter your choice (1-2): ")
+    print("2. Search Movies")
+    print("3. Exit")
+    guest_choice = input("Enter your choice (1-3): ")
     if guest_choice == '1':
         display_movies()
     else:

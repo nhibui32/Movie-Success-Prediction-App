@@ -1,3 +1,6 @@
 title,actor,actress,director,genre,release_month,rating,budget,country,predicted_score
 Catch Me,Ryan Reynolds,Gal Gadot,Christopher Nolan,Romance,January,G,Low,India,79.44
 test1,Chris Hemsworth,Meryl Streep,Christopher Nolan,Thriller,June,NC-17,Low,France,84.5
+test2,Will Smith,Natalie Portman,Denis Villeneuve,Sci-Fi,July,NC-17,high,cananda,82.0
+test3,Chris Evans,Meryl Streep,Ridley Scott,Thriller,January,R,Low,India,83.38
+test4,Chris Evans,Gal Gadot,Ridley Scott,Horror,May,G,Medium,USA,83.75

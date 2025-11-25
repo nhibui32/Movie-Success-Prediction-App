@@ -1,4 +1,4 @@
-username,password,role, first_name, last_name, DOB, email, phone_number
-admin,admin123,1, Alex, Lam, 01/01/1999, alex@gmail.com, 222-333-4444
-john,john123,2, John, Mol, 02/02/2000, John@gmail.com, 333-444-555
-emma,emma456,2, emma, Chen, 03/03/2003, emma@gmail.com, 444-555-6666
+username,password,role,first_name,last_name,DOB,email,phone_number
+admin,admin123,1,Ann,Bui,2/2/2000,Ann@gmail.com,222-333-4444
+john,john123,2,John,Mol,02/02/2000,John@gmail.com,333-444-555
+emma,emma456,2,Sophia,Zhang, 03/03/2003,sophiazhang@gmail.com,444-555-6666
