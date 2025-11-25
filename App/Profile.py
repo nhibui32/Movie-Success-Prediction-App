@@ -34,7 +34,10 @@ def edit_profile(user, csv_path="Data/Users.csv"):
 
 def Profile(user):
     while True:
-        print("\n==== User Profile ====")
+        if user['role'] == 1:
+            print("\n==== Staff Profile ====")
+        else:
+            print("\n==== User Profile ====")
         print(f"Username: {user['username']}")
         print(f"Name: {user['first_name']} {user['last_name']}")
         print(f"DOB: {user['DOB']}")

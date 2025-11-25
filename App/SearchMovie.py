@@ -2,6 +2,7 @@ import csv
 import pandas as pd 
 import os 
 from BuyTicket import BuyTicket
+from DisplayMovieList import display_movies
 csv_file = "Data/Predicted.csv"
 
 def search_movie(role, user):
@@ -18,7 +19,12 @@ def search_movie(role, user):
 
 
     movie = df[df['title'].str.lower() == title.lower()]
-
+    while movie.empty:
+        print("Movie not found. Please try again.")
+        print("This is a list of available movies:\n")
+        display_movies()
+        title = input("Title: ")
+        movie = df[df['title'].str.lower() == title.lower()]
     if not movie.empty:
         print("\nMovie found:")
         print(movie.to_string(index=False))

@@ -21,7 +21,11 @@ def User_Interface():
             password = input("Enter password: ")
 
             current_user = validate_user(username, password)
-
+            while current_user is None:
+                print("Invalid username or password. Please try again.")
+                username = input("Enter username: ")
+                password = input("Enter password: ")
+                current_user = validate_user(username, password)
             if current_user['role'] == 1:
                 print("\nLogin successful! Welcome Staff.")
                 display_menu_as_staff(current_user)

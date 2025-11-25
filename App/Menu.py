@@ -17,6 +17,7 @@ def validate_user(username, password):
     except FileNotFoundError:
         print("Error: users.csv not found!")
         return None
+    
 def display_menu_as_staff(current_user):
     print("\nStaff Menu:")
     print("1. Profile")

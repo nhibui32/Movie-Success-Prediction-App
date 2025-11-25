@@ -5,8 +5,6 @@ import os
 csv_file = "Data/Predicted.csv"
 
 def display_movies():
-    print("Looking for file at:", os.path.abspath(csv_file))  # Debug line
-
     # Check if file exists
     if not os.path.exists(csv_file):
         print("No movie data found yet. Please add movies first.")
