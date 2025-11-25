@@ -20,18 +20,7 @@ def User_Interface():
             username = input("Enter username: ")
             password = input("Enter password: ")
 
-            role = validate_user(username, password)
-
-            if role is None:  # Invalid login
-                print("\nInvalid username or password. Try again.")
-                continue
-
-            # Build current_user dictionary
-            current_user = {
-                'username': username,
-                'role': role,
-                'first_name': username  # optional, adjust if you have first_name stored
-            }
+            current_user = validate_user(username, password)
 
             if current_user['role'] == 1:
                 print("\nLogin successful! Welcome Staff.")
