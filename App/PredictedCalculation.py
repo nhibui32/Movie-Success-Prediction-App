@@ -1,5 +1,6 @@
 import json 
 
+# Load scores from JSON file
 with open('Data/Score.json', 'r', encoding='utf-8') as f:
     scores = json.load(f)["Scores"] 
 
